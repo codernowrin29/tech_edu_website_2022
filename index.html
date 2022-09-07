@@ -7,15 +7,345 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechEdu Website 2022</title>
 
+    <!--Style file link for some customization-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/5b3bc9917e.js" crossorigin="anonymous"></script>
+
     <!--Bootstrap CDN links through local file-->
     <link rel="stylesheet" href="bootstrap/bootstrap.min.css">
 </head>
 
 <body>
+    <!--Navbar Start-->
+    <section class="container fixed-top mb-5 pb-5">
+        <nav class="navbar navbar-expand-lg bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand probase fs-2 text-primary" href="#home">TechEdu</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto gap-5 list-nav">
+                        <li class="nav-item nav-hover">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item nav-hover">
+                            <a class="nav-link" href="#courses">Courses</a>
+                        </li>
+                        <li class="nav-item nav-hover">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </section>
+    <!--Navbar End-->
 
+    <!--Slide section start -->
+    <section id="home" class="container mt-5">
+        <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/cover/cover-1.png" class="d-block w-100 image-opacity" alt="...">
+                    <div class="carousel-caption   d-md-block position-by">
+                        <h5 class="text-black fs-2 probase">Get Start With TechEdu</h5>
+                        <p>You are most welcome!!</p>
+                        <button type="button" class="btn btn-primary get-start">Get Started</button>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="images/cover/cover-3.jpg" class="d-block w-100 image-opacity" alt="...">
+                    <div class="carousel-caption  d-md-block position-by">
+                        <h5 class="text-black fs-2 probase">Get Start With TechEdu</h5>
+                        <p>You are most welcome!!</p>
+                        <button type="button" class="btn btn-primary get-start">Get Started</button>
+                    </div>
+                </div>
+                <div class="carousel-item active" data-bs-interval="10000">
+                    <img src="images/cover/cover-1.png" class="d-block w-100 image-opacity" alt="...">
+                    <div class="carousel-caption   d-md-block position-by">
+                        <h5 class="text-black fs-2 probase">Get Start With TechEdu</h5>
+                        <p>You are most welcome!!</p>
+                        <button type="button" class="btn btn-primary get-start">Get Started</button>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!--Slide section end -->
+
+    <!-- Courses section -->
+    <div id="courses" class="container pt-4 my-4 text-center">
+        <h1 class="title-of-courses">Discover Our Popular<br>Courses</h1>
+        <p class="paragraph-of-courses">These are the most popular courses among TechEdu learners worldwide in 2022!!
+        </p>
+    </div>
+
+    <section class="container my-5">
+        <div class="row gap-2 row-cols-1 row-cols-md-1 row-cols-sm-1 row-cols-lg-2 d-flex justify-content-evenly ">
+            <!-- Course one -->
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/course/course-1.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><a class="text-decoration-none" href="#">Fundamental Of UI/UX
+                                    Design</a></h5>
+                            <p class="card-text">If you are looking for several courses that you can learn then this is
+                                the right place!!</p>
+                            <h4 class="text-primary">Price : $100</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course two -->
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/course/course-2.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><a class="text-decoration-none" href="#">Javascript Basic to
+                                    Advanced</a></h5>
+                            <p class="card-text">If you are looking for several courses that you can learn then this is
+                                the right place!!</p>
+                            <h4 class="text-primary">Price : $99</h4>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Course three -->
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/course/course-3.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><a class="text-decoration-none" href="#">Fullstack Web
+                                    Development</a></h5>
+                            <p class="card-text">If you are looking for several courses that you can learn then this is
+                                the right place!!</p>
+                            <h4 class="text-primary">Price : $80</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Course four -->
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/course/course-4.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><a class="text-decoration-none" href="#">Digital Marketing</a></h5>
+                            <p class="card-text">If you are looking for several courses that you can learn then this is
+                                the right place!!</p>
+                            <h4 class="text-primary">Price : $105</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Course five -->
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/course/course-5.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><a class="text-decoration-none" href="#">Photography Basic Rules</a>
+                            </h5>
+                            <p class="card-text">If you are looking for several courses that you can learn then this is
+                                the right place!!</p>
+                            <h4 class="text-primary">Price : $70</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Course six -->
+            <div class="card mb-3" style="max-width: 540px;">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="images/course/course-6.png" class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title"><a class="text-decoration-none" href="#">Motion Graphics</a></h5>
+                            <p class="card-text">If you are looking for several courses that you can learn then this is
+                                the right place!!</p>
+                            <h4 class="text-primary">Price : $120</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="d-flex justify-content-center my-5">
+        <button class="btn btn-outline-primary" type="submit">See More Courses</button>
+    </div>
+    <!--Course section end-->
+
+    <!--Frequently Asked Questions part start -->
+    <div class="container my-5">
+        <h1 class="title-of-courses">Frequently Asked Questions</h1>
+        <p class="paragraph-of-courses">The most frequently asked questions has shown bellow:</p>
+    </div>
+
+    <section class="container my-5">
+        <div class="accordion" id="accordionPanelsStayOpenExample">
+            <!--Q/A-1-->
+            <div class="accordion-item my-3 border">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true"
+                        aria-controls="panelsStayOpen-collapseOne">What is the difference between flexbox and css grid?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show"
+                    aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                        The basic difference between CSS Grid Layout and CSS Flexbox Layout is that flexbox was designed
+                        for layout in one dimension - either a row or a column. Grid was designed for two-dimensional
+                        layout - rows, and columns at the same time.
+                    </div>
+                </div>
+            </div>
+            <!--Q/A-2-->
+            <div class="accordion-item my-3 border ">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseTwo">What is the difference between bootstrap and tailwind
+                        css?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">The significant difference between Tailwind CSS and Bootstrap is that
+                        Tailwind offers predesigned widgets to build a site from scratch with fast UI development, while
+                        Bootstrap comes with a set of pre-styled responsive, mobile-first components that possess a
+                        definite UI kit.
+                    </div>
+                </div>
+            </div>
+            <!--Q/A-3-->
+            <div class="accordion-item my-3 border">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">What is css box model?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">In CSS, the term "box model" is used when talking about design and
+                        layout. The CSS box model is essentially a box that wraps around every HTML element. It consists
+                        of: margins, borders, padding, and the actual content.
+                    </div>
+                </div>
+            </div>
+            <!--Q/A-4-->
+            <div class="accordion-item my-3 border">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false"
+                        aria-controls="panelsStayOpen-collapseThree">What is semantic tag?
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse"
+                    aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">A semantic element clearly describes
+                        its meaning to
+                        both the browser and the developer.
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!--Frequently Asked Questions part end -->
+
+    <!--Trusted companies start -->
+    <section class="d-none d-sm-block">
+        <div class="mt-5 pt-5 text-center">
+            <h1 class="">Trusted by over <span class="text-primary">800+</span> companies</h1>
+        </div>
+        <section class="container py-4 my-5 mb-5">
+            <div class="row cols-1 row-cols-lg-6">
+                <div class="col d-flex gx-5">
+                    <img class="pe-4" src="images/company/company-1.png" alt="">
+                    <img class="pe-4" src="images/company/company-2.png" alt="">
+                    <img class="pe-4" src="images/company/company-3.png" alt="">
+                    <img class="pe-4" src="images/company/company-4.png" alt="">
+                    <img class="pe-4" src="images/company/company-5.png" alt="">
+                    <img class="pe-4" src="images/company/company-6.png" alt="">
+                </div>
+            </div>
+        </section>
+    </section>
+    <!--Trusted companies end -->
 
     <!--Bootstrap CDN links through local file-->
     <script src="bootstrap/bootstrap.min.js"></script>
 </body>
+
+<!--Footer start-->
+<footer id="about" class="bg-black text-white mt-5 p-5">
+    <h1 class="text-center text-primary pb-2">TechEdu</h1>
+    <p class="text-center">Office 41, Zawaya Buildin, Ghala Muscat,
+        <br>Sultanate of Oman
+    </p>
+    <div class="text-center pt-3">
+        <div>
+            <a class="text-decoration-none" href="#">Privacy Policies</a>
+        </div>
+        <span>&</span>
+        <div>
+            <a class="text-decoration-none" href="#">Terms And Conditions</a>
+        </div>
+    </div>
+    <div class="d-flex justify-content-center mt-5">
+        <div class="pe-3"><i class="fa-brands fa-facebook"></i></div>
+        <div class="pe-3"><i class="fa-brands fa-twitter"></i></div>
+        <div class="pe-3"><i class="fa-brands fa-linkedin"></i></div>
+        <div class="pe-3"><i class="fa-brands fa-square-instagram"></i></div>
+    </div>
+
+</footer>
+<!--Footer end-->
 
 </html>
